@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Steno Jig</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="type-jig.js"></script>
+	<script src="util.js"></script>
+	<script src="word-drill.js"></script>
+	<script src="number-sentences.js"></script>
+	<script src="steno-display.js"></script>
+	<script src="word-sets.js"></script>
+	<script src="plover-translations.js"></script>
+	<script src="chart.js"></script>
+	<link rel="stylesheet" type="text/css" href="font-roboto.css">
+</head>
+<body>
+
+<div id="form" class="wrapper">
+	<h1 id="section0" >Steno Solution Drills</h1>
+
+	<div class="form-section">
+		<div class="caption"><strong>Settings</strong> that apply to all drills</div><br>
+
+		<div>
+			<label><input type="radio" name="hints" value="1" checked>Show hints</label>
+			<label><input type="radio" name="hints" value="fail">Hint on fail</label>
+			<label><input type="radio" name="hints" value="">No hints</label>
+		</div><br>
+
+		<div name="live_wpm">
+			<label><input id="live_wpm" type="checkbox" name="live_wpm" value="1">Show Live WPM</label>
+		</div><br>
+
+		<!--<div name="show_timer">
+			<label><input id="show_timer" type="checkbox" name="show_timer" value="1" checked>Show Timer</label>
+		</div><br>-->
+
+		<div name="show_stats">
+			<label><input id="show_stats" type="checkbox" name="show_stats" value="1" checked>Show Stats at End of Exercise</label>
+		</div><!--<br>
+		
+		<div name="speed">
+			<label><input id="wpm" type="number" name="wpm" value="" step="5"> Speed (words per minute)
+				(or <input type="checkbox" id="cpm" value="1"> x5 chars per minute) </label>
+		</div><br>
+
+		<div name="alt">
+			<label>Alternate with: <input id="alternate" type="text" name="alternate"></label>
+		</div>-->
+	</div>
+
+	<div id="section1" class="form-section">
+		<div class="caption"><strong>Quick Links:</strong></div>
+		<a href="#section1">Multi-Syllabic Words</a> (269 Lessons, 5000 Words)<br>
+		<a href="#section2">Contractions</a> (7 Lessons, 70 Words)<br>
+		<a href="#section3">Multi-Word Phrases</a> (269 Lessons, 5000 Phrases)<br>
+	</div>
+
+	<div id="section1" class="form-section">
+		<div class="caption"><strong>BONUS:</strong> Multi-Syllabic Words</div><br>
+		Increase writing speed by using 1-stroke briefs with these frequency-sorted words.<br><br>
+
+		Designations:<br>
+		Section A | Excellent Yield (8 Lessons)<br>
+		Section B | Great Yield (31 Lessons)<br>
+		Section C | Good Yield (80 Lessons)<br>
+		Section D | Sufficient Yield (150 Lessons)<br><br>
+		
+		Section A<br>
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=MultisyllabicLesson1&type=randomly&timeLimit=1">Lesson 1 | Briefs 1-20</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson2&type=randomly&timeLimit=1">Lesson 2 | Briefs 21-40</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson3&type=randomly&timeLimit=1">Lesson 3 | Briefs 41-60</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson4&type=randomly&timeLimit=1">Lesson 4 | Briefs 61-80</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson5&type=randomly&timeLimit=1">Lesson 5 | Briefs 81-100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson6&type=randomly&timeLimit=1">Lesson 6 | Briefs 1-50</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson7&type=randomly&timeLimit=1">Lesson 7 | Briefs 51-100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson8&type=randomly&timeLimit=1">Lesson 8 | Briefs 1-100</a></li>
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=MultisyllabicLesson1&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson2&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson3&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson4&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson5&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson6&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson7&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson8&type=randomly">Untimed Lesson</a></li>
+									
+				</ul>
+			</div>
+		</div><br>
+
+		Section B<br>
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=MultisyllabicLesson9&type=randomly&timeLimit=1">Lesson 9 | Briefs 101-125</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson10&type=randomly&timeLimit=1">Lesson 10 | Briefs 126-150</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson11&type=randomly&timeLimit=1">Lesson 11 | Briefs 151-175</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson12&type=randomly&timeLimit=1">Lesson 12 | Briefs 176-200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson13&type=randomly&timeLimit=1">Lesson 13 | Briefs 101-150</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson14&type=randomly&timeLimit=1">Lesson 14 | Briefs 151-200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson15&type=randomly&timeLimit=1">Lesson 15 | Briefs 101-200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson16&type=randomly&timeLimit=1">Lesson 16 | Briefs 201-225</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson17&type=randomly&timeLimit=1">Lesson 17 | Briefs 226-250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson18&type=randomly&timeLimit=1">Lesson 18 | Briefs 251-275</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson19&type=randomly&timeLimit=1">Lesson 19 | Briefs 276-300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson20&type=randomly&timeLimit=1">Lesson 20 | Briefs 201-250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson21&type=randomly&timeLimit=1">Lesson 21 | Briefs 251-300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson22&type=randomly&timeLimit=1">Lesson 22 | Briefs 201-300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson23&type=randomly&timeLimit=1">Lesson 23 | Briefs 301-325</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson24&type=randomly&timeLimit=1">Lesson 24 | Briefs 326-350</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson25&type=randomly&timeLimit=1">Lesson 25 | Briefs 351-375</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson26&type=randomly&timeLimit=1">Lesson 26 | Briefs 376-400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson27&type=randomly&timeLimit=1">Lesson 27 | Briefs 301-350</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson28&type=randomly&timeLimit=1">Lesson 28 | Briefs 351-400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson29&type=randomly&timeLimit=1">Lesson 29 | Briefs 301-400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson30&type=randomly&timeLimit=1">Lesson 30 | Briefs 401-425</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson31&type=randomly&timeLimit=1">Lesson 31 | Briefs 426-450</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson32&type=randomly&timeLimit=1">Lesson 32 | Briefs 451-475</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson33&type=randomly&timeLimit=1">Lesson 33 | Briefs 476-500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson34&type=randomly&timeLimit=1">Lesson 34 | Briefs 401-450</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson35&type=randomly&timeLimit=1">Lesson 35 | Briefs 451-500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson36&type=randomly&timeLimit=1">Lesson 36 | Briefs 401-500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson37&type=randomly&timeLimit=1">Lesson 37 | Briefs 1-250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson38&type=randomly&timeLimit=1">Lesson 38 | Briefs 251-500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson39&type=randomly&timeLimit=1">Lesson 39 | Briefs 1-500</a></li>					
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=MultisyllabicLesson9&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson10&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson11&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson12&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson13&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson14&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson15&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson16&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson17&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson18&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson19&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson20&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson21&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson22&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson23&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson24&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson25&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson26&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson27&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson28&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson29&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson30&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson31&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson32&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson33&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson34&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson35&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson36&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson37&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson38&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson39&type=randomly">Untimed Lesson</a></li>														
+				</ul>
+			</div>
+		</div><br>
+
+		Section C<br>
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=MultisyllabicLesson40&type=randomly&timeLimit=1">Lesson 40 | Briefs 501-525</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson41&type=randomly&timeLimit=1">Lesson 41 | Briefs 526-550</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson42&type=randomly&timeLimit=1">Lesson 42 | Briefs 551-575</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson43&type=randomly&timeLimit=1">Lesson 43 | Briefs 576-600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson44&type=randomly&timeLimit=1">Lesson 44 | Briefs 501-600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson45&type=randomly&timeLimit=1">Lesson 45 | Briefs 601-625</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson46&type=randomly&timeLimit=1">Lesson 46 | Briefs 626-650</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson47&type=randomly&timeLimit=1">Lesson 47 | Briefs 651-675</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson48&type=randomly&timeLimit=1">Lesson 48 | Briefs 676-700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson49&type=randomly&timeLimit=1">Lesson 49 | Briefs 601-700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson50&type=randomly&timeLimit=1">Lesson 50 | Briefs 701-725</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson51&type=randomly&timeLimit=1">Lesson 51 | Briefs 726-750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson52&type=randomly&timeLimit=1">Lesson 52 | Briefs 751-775</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson53&type=randomly&timeLimit=1">Lesson 53 | Briefs 776-800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson54&type=randomly&timeLimit=1">Lesson 54 | Briefs 701-800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson55&type=randomly&timeLimit=1">Lesson 55 | Briefs 801-825</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson56&type=randomly&timeLimit=1">Lesson 56 | Briefs 826-850</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson57&type=randomly&timeLimit=1">Lesson 57 | Briefs 851-875</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson58&type=randomly&timeLimit=1">Lesson 58 | Briefs 876-900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson59&type=randomly&timeLimit=1">Lesson 59 | Briefs 801-900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson60&type=randomly&timeLimit=1">Lesson 60 | Briefs 901-925</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson61&type=randomly&timeLimit=1">Lesson 61 | Briefs 926-950</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson62&type=randomly&timeLimit=1">Lesson 62 | Briefs 951-975</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson63&type=randomly&timeLimit=1">Lesson 63 | Briefs 976-1000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson64&type=randomly&timeLimit=1">Lesson 64 | Briefs 501-750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson65&type=randomly&timeLimit=1">Lesson 65 | Briefs 751-1000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson66&type=randomly&timeLimit=1">Lesson 66 | Briefs 1001-1025</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson67&type=randomly&timeLimit=1">Lesson 67 | Briefs 1026-1050</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson68&type=randomly&timeLimit=1">Lesson 68 | Briefs 1051-1075</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson69&type=randomly&timeLimit=1">Lesson 69 | Briefs 1076-1100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson70&type=randomly&timeLimit=1">Lesson 70 | Briefs 1001-1100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson71&type=randomly&timeLimit=1">Lesson 71 | Briefs 1101-1125</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson72&type=randomly&timeLimit=1">Lesson 72 | Briefs 1126-1150</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson73&type=randomly&timeLimit=1">Lesson 73 | Briefs 1151-1175</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson74&type=randomly&timeLimit=1">Lesson 74 | Briefs 1176-1200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson75&type=randomly&timeLimit=1">Lesson 75 | Briefs 1101-1200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson76&type=randomly&timeLimit=1">Lesson 76 | Briefs 1201-1225</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson77&type=randomly&timeLimit=1">Lesson 77 | Briefs 1226-1250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson78&type=randomly&timeLimit=1">Lesson 78 | Briefs 1251-1275</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson79&type=randomly&timeLimit=1">Lesson 79 | Briefs 1276-1300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson80&type=randomly&timeLimit=1">Lesson 80 | Briefs 1201-1300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson81&type=randomly&timeLimit=1">Lesson 81 | Briefs 1301-1325</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson82&type=randomly&timeLimit=1">Lesson 82 | Briefs 1326-1350</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson83&type=randomly&timeLimit=1">Lesson 83 | Briefs 1351-1375</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson84&type=randomly&timeLimit=1">Lesson 84 | Briefs 1376-1400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson85&type=randomly&timeLimit=1">Lesson 85 | Briefs 1301-1400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson86&type=randomly&timeLimit=1">Lesson 86 | Briefs 1401-1425</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson87&type=randomly&timeLimit=1">Lesson 87 | Briefs 1426-1450</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson88&type=randomly&timeLimit=1">Lesson 88 | Briefs 1451-1475</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson89&type=randomly&timeLimit=1">Lesson 89 | Briefs 1476-1500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson90&type=randomly&timeLimit=1">Lesson 90 | Briefs 1401-1500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson91&type=randomly&timeLimit=1">Lesson 91 | Briefs 1001-1250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson92&type=randomly&timeLimit=1">Lesson 92 | Briefs 1251-1500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson93&type=randomly&timeLimit=1">Lesson 93 | Briefs 1501-1525</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson94&type=randomly&timeLimit=1">Lesson 94 | Briefs 1526-1550</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson95&type=randomly&timeLimit=1">Lesson 95 | Briefs 1551-1575</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson96&type=randomly&timeLimit=1">Lesson 96 | Briefs 1576-1600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson97&type=randomly&timeLimit=1">Lesson 97 | Briefs 1501-1600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson98&type=randomly&timeLimit=1">Lesson 98 | Briefs 1601-1625</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson99&type=randomly&timeLimit=1">Lesson 99 | Briefs 1626-1650</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson100&type=randomly&timeLimit=1">Lesson 100 | Briefs 1651-1675</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson101&type=randomly&timeLimit=1">Lesson 101 | Briefs 1676-1700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson102&type=randomly&timeLimit=1">Lesson 102 | Briefs 1601-1700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson103&type=randomly&timeLimit=1">Lesson 103 | Briefs 1701-1725</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson104&type=randomly&timeLimit=1">Lesson 104 | Briefs 1726-1750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson105&type=randomly&timeLimit=1">Lesson 105 | Briefs 1751-1775</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson106&type=randomly&timeLimit=1">Lesson 106 | Briefs 1776-1800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson107&type=randomly&timeLimit=1">Lesson 107 | Briefs 1701-1800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson108&type=randomly&timeLimit=1">Lesson 108 | Briefs 1801-1825</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson109&type=randomly&timeLimit=1">Lesson 109 | Briefs 1826-1850</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson110&type=randomly&timeLimit=1">Lesson 110 | Briefs 1851-1875</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson111&type=randomly&timeLimit=1">Lesson 111 | Briefs 1876-1900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson112&type=randomly&timeLimit=1">Lesson 112 | Briefs 1801-1900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson113&type=randomly&timeLimit=1">Lesson 113 | Briefs 1901-1925</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson114&type=randomly&timeLimit=1">Lesson 114 | Briefs 1926-1950</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson115&type=randomly&timeLimit=1">Lesson 115 | Briefs 1951-1975</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson116&type=randomly&timeLimit=1">Lesson 116 | Briefs 1976-2000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson117&type=randomly&timeLimit=1">Lesson 117 | Briefs 1901-2000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson118&type=randomly&timeLimit=1">Lesson 118 | Briefs 1501-1750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson119&type=randomly&timeLimit=1">Lesson 119 | Briefs 1751-2000</a></li>					
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=MultisyllabicLesson40&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson41&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson42&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson43&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson44&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson45&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson46&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson47&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson48&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson49&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson50&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson51&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson52&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson53&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson54&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson55&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson56&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson57&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson58&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson59&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson60&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson61&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson62&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson63&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson64&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson65&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson66&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson67&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson68&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson69&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson70&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson71&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson72&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson73&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson74&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson75&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson76&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson77&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson78&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson79&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson80&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson81&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson82&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson83&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson84&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson85&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson86&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson87&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson88&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson89&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson90&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson91&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson92&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson93&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson94&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson95&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson96&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson97&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson98&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson99&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson100&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson101&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson102&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson103&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson104&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson105&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson106&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson107&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson108&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson109&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson110&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson111&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson112&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson113&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson114&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson115&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson116&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson117&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson118&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson119&type=randomly">Untimed Lesson</a></li>					
+				</ul>
+			</div>
+		</div><br>
+
+		Section D<br>
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=MultisyllabicLesson120&type=randomly&timeLimit=1">Lesson 120 | Briefs 2001-2025</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson121&type=randomly&timeLimit=1">Lesson 121 | Briefs 2026-2050</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson122&type=randomly&timeLimit=1">Lesson 122 | Briefs 2051-2075</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson123&type=randomly&timeLimit=1">Lesson 123 | Briefs 2076-2100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson124&type=randomly&timeLimit=1">Lesson 124 | Briefs 2001-2100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson125&type=randomly&timeLimit=1">Lesson 125 | Briefs 2101-2125</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson126&type=randomly&timeLimit=1">Lesson 126 | Briefs 2126-2150</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson127&type=randomly&timeLimit=1">Lesson 127 | Briefs 2151-2175</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson128&type=randomly&timeLimit=1">Lesson 128 | Briefs 2176-2200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson129&type=randomly&timeLimit=1">Lesson 129 | Briefs 2101-2200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson130&type=randomly&timeLimit=1">Lesson 130 | Briefs 2201-2225</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson131&type=randomly&timeLimit=1">Lesson 131 | Briefs 2226-2250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson132&type=randomly&timeLimit=1">Lesson 132 | Briefs 2251-2275</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson133&type=randomly&timeLimit=1">Lesson 133 | Briefs 2276-2300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson134&type=randomly&timeLimit=1">Lesson 134 | Briefs 2201-2300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson135&type=randomly&timeLimit=1">Lesson 135 | Briefs 2301-2325</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson136&type=randomly&timeLimit=1">Lesson 136 | Briefs 2326-2350</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson137&type=randomly&timeLimit=1">Lesson 137 | Briefs 2351-2375</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson138&type=randomly&timeLimit=1">Lesson 138 | Briefs 2376-2400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson139&type=randomly&timeLimit=1">Lesson 139 | Briefs 2301-2400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson140&type=randomly&timeLimit=1">Lesson 140 | Briefs 2401-2425</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson141&type=randomly&timeLimit=1">Lesson 141 | Briefs 2426-2450</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson142&type=randomly&timeLimit=1">Lesson 142 | Briefs 2451-2475</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson143&type=randomly&timeLimit=1">Lesson 143 | Briefs 2476-2500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson144&type=randomly&timeLimit=1">Lesson 144 | Briefs 2401-2500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson145&type=randomly&timeLimit=1">Lesson 145 | Briefs 2501-2525</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson146&type=randomly&timeLimit=1">Lesson 146 | Briefs 2526-2550</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson147&type=randomly&timeLimit=1">Lesson 147 | Briefs 2551-2575</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson148&type=randomly&timeLimit=1">Lesson 148 | Briefs 2576-2600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson149&type=randomly&timeLimit=1">Lesson 149 | Briefs 2501-2600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson150&type=randomly&timeLimit=1">Lesson 150 | Briefs 2601-2625</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson151&type=randomly&timeLimit=1">Lesson 151 | Briefs 2626-2650</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson152&type=randomly&timeLimit=1">Lesson 152 | Briefs 2651-2675</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson153&type=randomly&timeLimit=1">Lesson 153 | Briefs 2676-2700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson154&type=randomly&timeLimit=1">Lesson 154 | Briefs 2601-2700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson155&type=randomly&timeLimit=1">Lesson 155 | Briefs 2701-2725</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson156&type=randomly&timeLimit=1">Lesson 156 | Briefs 2726-2750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson157&type=randomly&timeLimit=1">Lesson 157 | Briefs 2751-2775</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson158&type=randomly&timeLimit=1">Lesson 158 | Briefs 2776-2800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson159&type=randomly&timeLimit=1">Lesson 159 | Briefs 2701-2800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson160&type=randomly&timeLimit=1">Lesson 160 | Briefs 2801-2825</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson161&type=randomly&timeLimit=1">Lesson 161 | Briefs 2826-2850</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson162&type=randomly&timeLimit=1">Lesson 162 | Briefs 2851-2875</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson163&type=randomly&timeLimit=1">Lesson 163 | Briefs 2876-2900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson164&type=randomly&timeLimit=1">Lesson 164 | Briefs 2801-2900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson165&type=randomly&timeLimit=1">Lesson 165 | Briefs 2901-2925</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson166&type=randomly&timeLimit=1">Lesson 166 | Briefs 2926-2950</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson167&type=randomly&timeLimit=1">Lesson 167 | Briefs 2951-2975</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson168&type=randomly&timeLimit=1">Lesson 168 | Briefs 2976-3000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson169&type=randomly&timeLimit=1">Lesson 169 | Briefs 2901-3000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson170&type=randomly&timeLimit=1">Lesson 170 | Briefs 3001-3025</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson171&type=randomly&timeLimit=1">Lesson 171 | Briefs 3026-3050</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson172&type=randomly&timeLimit=1">Lesson 172 | Briefs 3051-3075</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson173&type=randomly&timeLimit=1">Lesson 173 | Briefs 3076-3100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson174&type=randomly&timeLimit=1">Lesson 174 | Briefs 3001-3100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson175&type=randomly&timeLimit=1">Lesson 175 | Briefs 3101-3125</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson176&type=randomly&timeLimit=1">Lesson 176 | Briefs 3126-3150</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson177&type=randomly&timeLimit=1">Lesson 177 | Briefs 3151-3175</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson178&type=randomly&timeLimit=1">Lesson 178 | Briefs 3176-3200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson179&type=randomly&timeLimit=1">Lesson 179 | Briefs 3101-3200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson180&type=randomly&timeLimit=1">Lesson 180 | Briefs 3201-3225</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson181&type=randomly&timeLimit=1">Lesson 181 | Briefs 3226-3250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson182&type=randomly&timeLimit=1">Lesson 182 | Briefs 3251-3275</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson183&type=randomly&timeLimit=1">Lesson 183 | Briefs 3276-3300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson184&type=randomly&timeLimit=1">Lesson 184 | Briefs 3201-3300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson185&type=randomly&timeLimit=1">Lesson 185 | Briefs 3301-3325</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson186&type=randomly&timeLimit=1">Lesson 186 | Briefs 3326-3350</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson187&type=randomly&timeLimit=1">Lesson 187 | Briefs 3351-3375</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson188&type=randomly&timeLimit=1">Lesson 188 | Briefs 3376-3400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson189&type=randomly&timeLimit=1">Lesson 189 | Briefs 3301-3400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson190&type=randomly&timeLimit=1">Lesson 190 | Briefs 3401-3425</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson191&type=randomly&timeLimit=1">Lesson 191 | Briefs 3426-3450</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson192&type=randomly&timeLimit=1">Lesson 192 | Briefs 3451-3475</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson193&type=randomly&timeLimit=1">Lesson 193 | Briefs 3476-3500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson194&type=randomly&timeLimit=1">Lesson 194 | Briefs 3401-3500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson195&type=randomly&timeLimit=1">Lesson 195 | Briefs 3501-3525</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson196&type=randomly&timeLimit=1">Lesson 196 | Briefs 3526-3550</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson197&type=randomly&timeLimit=1">Lesson 197 | Briefs 3551-3575</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson198&type=randomly&timeLimit=1">Lesson 198 | Briefs 3576-3600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson199&type=randomly&timeLimit=1">Lesson 199 | Briefs 3501-3600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson200&type=randomly&timeLimit=1">Lesson 200 | Briefs 3601-3625</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson201&type=randomly&timeLimit=1">Lesson 201 | Briefs 3626-3650</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson202&type=randomly&timeLimit=1">Lesson 202 | Briefs 3651-3675</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson203&type=randomly&timeLimit=1">Lesson 203 | Briefs 3676-3700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson204&type=randomly&timeLimit=1">Lesson 204 | Briefs 3601-3700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson205&type=randomly&timeLimit=1">Lesson 205 | Briefs 3701-3725</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson206&type=randomly&timeLimit=1">Lesson 206 | Briefs 3726-3750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson207&type=randomly&timeLimit=1">Lesson 207 | Briefs 3751-3775</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson208&type=randomly&timeLimit=1">Lesson 208 | Briefs 3776-3800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson209&type=randomly&timeLimit=1">Lesson 209 | Briefs 3701-3800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson210&type=randomly&timeLimit=1">Lesson 210 | Briefs 3801-3825</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson211&type=randomly&timeLimit=1">Lesson 211 | Briefs 3826-3850</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson212&type=randomly&timeLimit=1">Lesson 212 | Briefs 3851-3875</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson213&type=randomly&timeLimit=1">Lesson 213 | Briefs 3876-3900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson214&type=randomly&timeLimit=1">Lesson 214 | Briefs 3801-3900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson215&type=randomly&timeLimit=1">Lesson 215 | Briefs 3901-3925</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson216&type=randomly&timeLimit=1">Lesson 216 | Briefs 3926-3950</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson217&type=randomly&timeLimit=1">Lesson 217 | Briefs 3951-3975</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson218&type=randomly&timeLimit=1">Lesson 218 | Briefs 3976-4000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson219&type=randomly&timeLimit=1">Lesson 219 | Briefs 3901-4000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson220&type=randomly&timeLimit=1">Lesson 220 | Briefs 4001-4025</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson221&type=randomly&timeLimit=1">Lesson 221 | Briefs 4026-4050</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson222&type=randomly&timeLimit=1">Lesson 222 | Briefs 4051-4075</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson223&type=randomly&timeLimit=1">Lesson 223 | Briefs 4076-4100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson224&type=randomly&timeLimit=1">Lesson 224 | Briefs 4001-4100</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson225&type=randomly&timeLimit=1">Lesson 225 | Briefs 4101-4125</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson226&type=randomly&timeLimit=1">Lesson 226 | Briefs 4126-4150</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson227&type=randomly&timeLimit=1">Lesson 227 | Briefs 4151-4175</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson228&type=randomly&timeLimit=1">Lesson 228 | Briefs 4176-4200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson229&type=randomly&timeLimit=1">Lesson 229 | Briefs 4101-4200</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson230&type=randomly&timeLimit=1">Lesson 230 | Briefs 4201-4225</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson231&type=randomly&timeLimit=1">Lesson 231 | Briefs 4226-4250</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson232&type=randomly&timeLimit=1">Lesson 232 | Briefs 4251-4275</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson233&type=randomly&timeLimit=1">Lesson 233 | Briefs 4276-4300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson234&type=randomly&timeLimit=1">Lesson 234 | Briefs 4201-4300</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson235&type=randomly&timeLimit=1">Lesson 235 | Briefs 4301-4325</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson236&type=randomly&timeLimit=1">Lesson 236 | Briefs 4326-4350</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson237&type=randomly&timeLimit=1">Lesson 237 | Briefs 4351-4375</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson238&type=randomly&timeLimit=1">Lesson 238 | Briefs 4376-4400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson239&type=randomly&timeLimit=1">Lesson 239 | Briefs 4301-4400</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson240&type=randomly&timeLimit=1">Lesson 240 | Briefs 4401-4425</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson241&type=randomly&timeLimit=1">Lesson 241 | Briefs 4426-4450</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson242&type=randomly&timeLimit=1">Lesson 242 | Briefs 4451-4475</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson243&type=randomly&timeLimit=1">Lesson 243 | Briefs 4476-4500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson244&type=randomly&timeLimit=1">Lesson 244 | Briefs 4401-4500</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson245&type=randomly&timeLimit=1">Lesson 245 | Briefs 4501-4525</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson246&type=randomly&timeLimit=1">Lesson 246 | Briefs 4526-4550</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson247&type=randomly&timeLimit=1">Lesson 247 | Briefs 4551-4575</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson248&type=randomly&timeLimit=1">Lesson 248 | Briefs 4576-4600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson249&type=randomly&timeLimit=1">Lesson 249 | Briefs 4501-4600</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson250&type=randomly&timeLimit=1">Lesson 250 | Briefs 4601-4625</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson251&type=randomly&timeLimit=1">Lesson 251 | Briefs 4626-4650</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson252&type=randomly&timeLimit=1">Lesson 252 | Briefs 4651-4675</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson253&type=randomly&timeLimit=1">Lesson 253 | Briefs 4676-4700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson254&type=randomly&timeLimit=1">Lesson 254 | Briefs 4601-4700</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson255&type=randomly&timeLimit=1">Lesson 255 | Briefs 4701-4725</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson256&type=randomly&timeLimit=1">Lesson 256 | Briefs 4726-4750</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson257&type=randomly&timeLimit=1">Lesson 257 | Briefs 4751-4775</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson258&type=randomly&timeLimit=1">Lesson 258 | Briefs 4776-4800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson259&type=randomly&timeLimit=1">Lesson 259 | Briefs 4701-4800</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson260&type=randomly&timeLimit=1">Lesson 260 | Briefs 4801-4825</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson261&type=randomly&timeLimit=1">Lesson 261 | Briefs 4826-4850</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson262&type=randomly&timeLimit=1">Lesson 262 | Briefs 4851-4875</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson263&type=randomly&timeLimit=1">Lesson 263 | Briefs 4876-4900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson264&type=randomly&timeLimit=1">Lesson 264 | Briefs 4801-4900</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson265&type=randomly&timeLimit=1">Lesson 265 | Briefs 4901-4925</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson266&type=randomly&timeLimit=1">Lesson 266 | Briefs 4926-4950</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson267&type=randomly&timeLimit=1">Lesson 267 | Briefs 4951-4975</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson268&type=randomly&timeLimit=1">Lesson 268 | Briefs 4976-5000</a></li>
+					<li><a href="form.html?drill=MultisyllabicLesson269&type=randomly&timeLimit=1">Lesson 269 | Briefs 4901-5000</a></li>					
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=MultisyllabicLesson120&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson121&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson122&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson123&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson124&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson125&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson126&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson127&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson128&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson129&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson130&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson131&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson132&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson133&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson134&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson135&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson136&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson137&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson138&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson139&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson140&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson141&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson142&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson143&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson144&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson145&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson146&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson147&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson148&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson149&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson150&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson151&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson152&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson153&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson154&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson155&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson156&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson157&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson158&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson159&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson160&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson161&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson162&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson163&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson164&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson165&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson166&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson167&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson168&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson169&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson170&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson171&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson172&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson173&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson174&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson175&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson176&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson177&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson178&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson179&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson180&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson181&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson182&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson183&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson184&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson185&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson186&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson187&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson188&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson189&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson190&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson191&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson192&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson193&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson194&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson195&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson196&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson197&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson198&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson199&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson200&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson201&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson202&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson203&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson204&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson205&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson206&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson207&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson208&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson209&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson210&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson211&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson212&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson213&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson214&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson215&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson216&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson217&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson218&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson219&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson220&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson221&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson222&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson223&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson224&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson225&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson226&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson227&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson228&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson229&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson230&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson231&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson232&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson233&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson234&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson235&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson236&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson237&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson238&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson239&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson240&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson241&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson242&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson243&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson244&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson245&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson246&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson247&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson248&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson249&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson250&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson251&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson252&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson253&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson254&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson255&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson256&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson257&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson258&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson259&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson260&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson261&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson262&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson263&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson264&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson265&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson266&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson267&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson268&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=MultisyllabicLesson269&type=randomly">Untimed Lesson</a></li>					
+				</ul>
+			</div>
+		</div><br>
+	</div>
+
+	<div id="section2" class="form-section">
+		<div class="caption"><strong>BONUS:</strong> Contractions</div><br>
+		Foundational building blocks for larger, more complex multi-word briefs.<br><br>
+		
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=ContractionsLesson1&type=randomly&timeLimit=1">Lesson 1 | Briefs 1-20</a></li>
+					<li><a href="form.html?drill=ContractionsLesson2&type=randomly&timeLimit=1">Lesson 2 | Briefs 21-40</a></li>
+					<li><a href="form.html?drill=ContractionsLesson3&type=randomly&timeLimit=1">Lesson 3 | Briefs 41-60</a></li>
+					<li><a href="form.html?drill=ContractionsLesson4&type=randomly&timeLimit=1">Lesson 4 | Briefs 61-70</a></li>
+					<li><a href="form.html?drill=ContractionsLesson5&type=randomly&timeLimit=1">Lesson 5 | Briefs 1-35</a></li>
+					<li><a href="form.html?drill=ContractionsLesson6&type=randomly&timeLimit=1">Lesson 6 | Briefs 36-70</a></li>
+					<li><a href="form.html?drill=ContractionsLesson7&type=randomly&timeLimit=1">Lesson 7 | Briefs 1-70</a></li>
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=ContractionsLesson1&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=ContractionsLesson2&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=ContractionsLesson3&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=ContractionsLesson4&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=ContractionsLesson5&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=ContractionsLesson6&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=ContractionsLesson7&type=randomly">Untimed Lesson</a></li>
+				</ul>
+			</div>
+		</div><br>
+	</div>
+
+	<div id="section3" class="form-section">
+		<div class="caption">Most used <strong>multi-word briefs</strong> (once, in random order)</div>
+
+		<form id="most-used" class="drill-options" action="form.html">
+			<input type="hidden" name="drill" value="MultiWordBriefs">
+			<input type="hidden" name="type" value="shuffled">
+
+			Drill
+			<input type="number" name="count" value="20" min="10" max="100" step="1">
+			briefs from the range
+			<input type="number" name="first" value="0" min="0" max="4999" step="1">
+			to
+			<input type="number" name="last" value="100" min="1" max="5000" step="1">
+			(Maximum 5000)
+			<br>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div id="section4" class="form-section">
+		<div class="caption">Multi-word <strong>Timed Drills</strong></div><br>
+		Increase writing speed by using 1-stroke briefs with these frequency-sorted, multi-word phrases.<br><br>
+
+		Designations:<br>
+		Section A | Excellent Yield<br>
+		Section B | Great Yield<br>
+		Section C | Good Yield<br>
+		Section D | Sufficient Yield<br><br>
+
+		Section A<br>
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=Lesson1&type=randomly&timeLimit=1">Lesson 1 | Briefs 1-20</a></li>
+					<li><a href="form.html?drill=Lesson2&type=randomly&timeLimit=1">Lesson 2 | Briefs 21-40</a></li>
+					<li><a href="form.html?drill=Lesson3&type=randomly&timeLimit=1">Lesson 3 | Briefs 41-60</a></li>
+					<li><a href="form.html?drill=Lesson4&type=randomly&timeLimit=1">Lesson 4 | Briefs 61-80</a></li>
+					<li><a href="form.html?drill=Lesson5&type=randomly&timeLimit=1">Lesson 5 | Briefs 81-100</a></li>
+					<li><a href="form.html?drill=Lesson6&type=randomly&timeLimit=1">Lesson 6 | Briefs 1-50</a></li>
+					<li><a href="form.html?drill=Lesson7&type=randomly&timeLimit=1">Lesson 7 | Briefs 51-100</a></li>
+					<li><a href="form.html?drill=Lesson8&type=randomly&timeLimit=1">Lesson 8 | Briefs 1-100</a></li>
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=Lesson1&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson2&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson3&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson4&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson5&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson6&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson7&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson8&type=randomly">Untimed Lesson</a></li>
+				</ul>
+			</div>
+		</div><br>
+		Section B
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=Lesson9&type=randomly&timeLimit=1">Lesson 9 | Briefs 101-125</a></li>
+					<li><a href="form.html?drill=Lesson10&type=randomly&timeLimit=1">Lesson 10 | Briefs 126-150</a></li>
+					<li><a href="form.html?drill=Lesson11&type=randomly&timeLimit=1">Lesson 11 | Briefs 151-175</a></li>
+					<li><a href="form.html?drill=Lesson12&type=randomly&timeLimit=1">Lesson 12 | Briefs 176-200</a></li>
+					<li><a href="form.html?drill=Lesson13&type=randomly&timeLimit=1">Lesson 13 | Briefs 101-150</a></li>
+					<li><a href="form.html?drill=Lesson14&type=randomly&timeLimit=1">Lesson 14 | Briefs 151-200</a></li>
+					<li><a href="form.html?drill=Lesson15&type=randomly&timeLimit=1">Lesson 15 | Briefs 101-200</a></li>
+					<li><a href="form.html?drill=Lesson16&type=randomly&timeLimit=1">Lesson 16 | Briefs 201-225</a></li>
+					<li><a href="form.html?drill=Lesson17&type=randomly&timeLimit=1">Lesson 17 | Briefs 226-250</a></li>
+					<li><a href="form.html?drill=Lesson18&type=randomly&timeLimit=1">Lesson 18 | Briefs 251-275</a></li>
+					<li><a href="form.html?drill=Lesson19&type=randomly&timeLimit=1">Lesson 19 | Briefs 276-300</a></li>
+					<li><a href="form.html?drill=Lesson20&type=randomly&timeLimit=1">Lesson 20 | Briefs 201-250</a></li>
+					<li><a href="form.html?drill=Lesson21&type=randomly&timeLimit=1">Lesson 21 | Briefs 251-300</a></li>
+					<li><a href="form.html?drill=Lesson22&type=randomly&timeLimit=1">Lesson 22 | Briefs 201-300</a></li>
+					<li><a href="form.html?drill=Lesson23&type=randomly&timeLimit=1">Lesson 23 | Briefs 301-325</a></li>
+					<li><a href="form.html?drill=Lesson24&type=randomly&timeLimit=1">Lesson 24 | Briefs 326-350</a></li>
+					<li><a href="form.html?drill=Lesson25&type=randomly&timeLimit=1">Lesson 25 | Briefs 351-375</a></li>
+					<li><a href="form.html?drill=Lesson26&type=randomly&timeLimit=1">Lesson 26 | Briefs 376-400</a></li>
+					<li><a href="form.html?drill=Lesson27&type=randomly&timeLimit=1">Lesson 27 | Briefs 301-350</a></li>
+					<li><a href="form.html?drill=Lesson28&type=randomly&timeLimit=1">Lesson 28 | Briefs 351-400</a></li>
+					<li><a href="form.html?drill=Lesson29&type=randomly&timeLimit=1">Lesson 29 | Briefs 301-400</a></li>
+					<li><a href="form.html?drill=Lesson30&type=randomly&timeLimit=1">Lesson 30 | Briefs 401-425</a></li>
+					<li><a href="form.html?drill=Lesson31&type=randomly&timeLimit=1">Lesson 31 | Briefs 426-450</a></li>
+					<li><a href="form.html?drill=Lesson32&type=randomly&timeLimit=1">Lesson 32 | Briefs 451-475</a></li>
+					<li><a href="form.html?drill=Lesson33&type=randomly&timeLimit=1">Lesson 33 | Briefs 476-500</a></li>
+					<li><a href="form.html?drill=Lesson34&type=randomly&timeLimit=1">Lesson 34 | Briefs 401-450</a></li>
+					<li><a href="form.html?drill=Lesson35&type=randomly&timeLimit=1">Lesson 35 | Briefs 451-500</a></li>
+					<li><a href="form.html?drill=Lesson36&type=randomly&timeLimit=1">Lesson 36 | Briefs 401-500</a></li>
+					<li><a href="form.html?drill=Lesson37&type=randomly&timeLimit=2">Lesson 37 | Briefs 1-250</a></li>
+					<li><a href="form.html?drill=Lesson38&type=randomly&timeLimit=2">Lesson 38 | Briefs 251-500</a></li>
+					<li><a href="form.html?drill=Lesson39&type=randomly&timeLimit=3">Lesson 39 | Briefs 1-500</a></li>
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=Lesson9&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson10&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson11&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson12&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson13&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson14&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson15&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson16&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson17&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson18&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson19&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson20&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson21&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson22&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson23&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson24&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson25&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson26&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson27&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson28&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson29&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson30&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson31&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson32&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson33&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson34&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson35&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson36&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson37&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson38&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson39&type=randomly">Untimed Lesson</a></li>
+				</ul>
+			</div>
+		</div><br>
+		Section C
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=Lesson40&type=randomly&timeLimit=1">Lesson 40 | Briefs 501-525</a></li>
+					<li><a href="form.html?drill=Lesson41&type=randomly&timeLimit=1">Lesson 41 | Briefs 526-550</a></li>
+					<li><a href="form.html?drill=Lesson42&type=randomly&timeLimit=1">Lesson 42 | Briefs 551-575</a></li>
+					<li><a href="form.html?drill=Lesson43&type=randomly&timeLimit=1">Lesson 43 | Briefs 576-600</a></li>
+					<li><a href="form.html?drill=Lesson44&type=randomly&timeLimit=1">Lesson 44 | Briefs 501-600</a></li>
+					<li><a href="form.html?drill=Lesson45&type=randomly&timeLimit=1">Lesson 45 | Briefs 601-625</a></li>
+					<li><a href="form.html?drill=Lesson46&type=randomly&timeLimit=1">Lesson 46 | Briefs 626-650</a></li>
+					<li><a href="form.html?drill=Lesson47&type=randomly&timeLimit=1">Lesson 47 | Briefs 651-675</a></li>
+					<li><a href="form.html?drill=Lesson48&type=randomly&timeLimit=1">Lesson 48 | Briefs 676-700</a></li>
+					<li><a href="form.html?drill=Lesson49&type=randomly&timeLimit=1">Lesson 49 | Briefs 601-700</a></li>
+					<li><a href="form.html?drill=Lesson50&type=randomly&timeLimit=1">Lesson 50 | Briefs 701-725</a></li>
+					<li><a href="form.html?drill=Lesson51&type=randomly&timeLimit=1">Lesson 51 | Briefs 726-750</a></li>
+					<li><a href="form.html?drill=Lesson52&type=randomly&timeLimit=1">Lesson 52 | Briefs 751-775</a></li>
+					<li><a href="form.html?drill=Lesson53&type=randomly&timeLimit=1">Lesson 53 | Briefs 776-800</a></li>
+					<li><a href="form.html?drill=Lesson54&type=randomly&timeLimit=1">Lesson 54 | Briefs 701-800</a></li>
+					<li><a href="form.html?drill=Lesson55&type=randomly&timeLimit=1">Lesson 55 | Briefs 801-825</a></li>
+					<li><a href="form.html?drill=Lesson56&type=randomly&timeLimit=1">Lesson 56 | Briefs 826-850</a></li>
+					<li><a href="form.html?drill=Lesson57&type=randomly&timeLimit=1">Lesson 57 | Briefs 851-875</a></li>
+					<li><a href="form.html?drill=Lesson58&type=randomly&timeLimit=1">Lesson 58 | Briefs 876-900</a></li>
+					<li><a href="form.html?drill=Lesson59&type=randomly&timeLimit=1">Lesson 59 | Briefs 801-900</a></li>
+					<li><a href="form.html?drill=Lesson60&type=randomly&timeLimit=1">Lesson 60 | Briefs 901-925</a></li>
+					<li><a href="form.html?drill=Lesson61&type=randomly&timeLimit=1">Lesson 61 | Briefs 926-950</a></li>
+					<li><a href="form.html?drill=Lesson62&type=randomly&timeLimit=1">Lesson 62 | Briefs 951-975</a></li>
+					<li><a href="form.html?drill=Lesson63&type=randomly&timeLimit=1">Lesson 63 | Briefs 976-1000</a></li>
+					<li><a href="form.html?drill=Lesson64&type=randomly&timeLimit=2">Lesson 64 | Briefs 501-750</a></li>
+					<li><a href="form.html?drill=Lesson65&type=randomly&timeLimit=2">Lesson 65 | Briefs 751-1000</a></li>
+					<li><a href="form.html?drill=Lesson66&type=randomly&timeLimit=1">Lesson 66 | Briefs 1001-1025</a></li>
+					<li><a href="form.html?drill=Lesson67&type=randomly&timeLimit=1">Lesson 67 | Briefs 1026-1050</a></li>
+					<li><a href="form.html?drill=Lesson68&type=randomly&timeLimit=1">Lesson 68 | Briefs 1051-1075</a></li>
+					<li><a href="form.html?drill=Lesson69&type=randomly&timeLimit=1">Lesson 69 | Briefs 1076-1100</a></li>
+					<li><a href="form.html?drill=Lesson70&type=randomly&timeLimit=1">Lesson 70 | Briefs 1001-1100</a></li>
+					<li><a href="form.html?drill=Lesson71&type=randomly&timeLimit=1">Lesson 71 | Briefs 1101-1125</a></li>
+					<li><a href="form.html?drill=Lesson72&type=randomly&timeLimit=1">Lesson 72 | Briefs 1126-1150</a></li>
+					<li><a href="form.html?drill=Lesson73&type=randomly&timeLimit=1">Lesson 73 | Briefs 1151-1175</a></li>
+					<li><a href="form.html?drill=Lesson74&type=randomly&timeLimit=1">Lesson 74 | Briefs 1176-1200</a></li>
+					<li><a href="form.html?drill=Lesson75&type=randomly&timeLimit=1">Lesson 75 | Briefs 1101-1200</a></li>
+					<li><a href="form.html?drill=Lesson76&type=randomly&timeLimit=1">Lesson 76 | Briefs 1201-1225</a></li>
+					<li><a href="form.html?drill=Lesson77&type=randomly&timeLimit=1">Lesson 77 | Briefs 1226-1250</a></li>
+					<li><a href="form.html?drill=Lesson78&type=randomly&timeLimit=1">Lesson 78 | Briefs 1251-1275</a></li>
+					<li><a href="form.html?drill=Lesson79&type=randomly&timeLimit=1">Lesson 79 | Briefs 1276-1300</a></li>
+					<li><a href="form.html?drill=Lesson80&type=randomly&timeLimit=1">Lesson 80 | Briefs 1201-1300</a></li>
+					<li><a href="form.html?drill=Lesson81&type=randomly&timeLimit=1">Lesson 81 | Briefs 1301-1325</a></li>
+					<li><a href="form.html?drill=Lesson82&type=randomly&timeLimit=1">Lesson 82 | Briefs 1326-1350</a></li>
+					<li><a href="form.html?drill=Lesson83&type=randomly&timeLimit=1">Lesson 83 | Briefs 1351-1375</a></li>
+					<li><a href="form.html?drill=Lesson84&type=randomly&timeLimit=1">Lesson 84 | Briefs 1376-1400</a></li>
+					<li><a href="form.html?drill=Lesson85&type=randomly&timeLimit=1">Lesson 85 | Briefs 1301-1400</a></li>
+					<li><a href="form.html?drill=Lesson86&type=randomly&timeLimit=1">Lesson 86 | Briefs 1401-1425</a></li>
+					<li><a href="form.html?drill=Lesson87&type=randomly&timeLimit=1">Lesson 87 | Briefs 1426-1450</a></li>
+					<li><a href="form.html?drill=Lesson88&type=randomly&timeLimit=1">Lesson 88 | Briefs 1451-1475</a></li>
+					<li><a href="form.html?drill=Lesson89&type=randomly&timeLimit=1">Lesson 89 | Briefs 1476-1500</a></li>
+					<li><a href="form.html?drill=Lesson90&type=randomly&timeLimit=1">Lesson 90 | Briefs 1401-1500</a></li>
+					<li><a href="form.html?drill=Lesson91&type=randomly&timeLimit=2">Lesson 91 | Briefs 1001-1250</a></li>
+					<li><a href="form.html?drill=Lesson92&type=randomly&timeLimit=2">Lesson 92 | Briefs 1251-1500</a></li>
+					<li><a href="form.html?drill=Lesson93&type=randomly&timeLimit=1">Lesson 93 | Briefs 1501-1525</a></li>
+					<li><a href="form.html?drill=Lesson94&type=randomly&timeLimit=1">Lesson 94 | Briefs 1526-1550</a></li>
+					<li><a href="form.html?drill=Lesson95&type=randomly&timeLimit=1">Lesson 95 | Briefs 1551-1575</a></li>
+					<li><a href="form.html?drill=Lesson96&type=randomly&timeLimit=1">Lesson 96 | Briefs 1576-1600</a></li>
+					<li><a href="form.html?drill=Lesson97&type=randomly&timeLimit=1">Lesson 97 | Briefs 1501-1600</a></li>
+					<li><a href="form.html?drill=Lesson98&type=randomly&timeLimit=1">Lesson 98 | Briefs 1601-1625</a></li>
+					<li><a href="form.html?drill=Lesson99&type=randomly&timeLimit=1">Lesson 99 | Briefs 1626-1650</a></li>
+					<li><a href="form.html?drill=Lesson100&type=randomly&timeLimit=1">Lesson 100 | Briefs 1651-1675</a></li>
+					<li><a href="form.html?drill=Lesson101&type=randomly&timeLimit=1">Lesson 101 | Briefs 1676-1700</a></li>
+					<li><a href="form.html?drill=Lesson102&type=randomly&timeLimit=1">Lesson 102 | Briefs 1601-1700</a></li>
+					<li><a href="form.html?drill=Lesson103&type=randomly&timeLimit=1">Lesson 103 | Briefs 1701-1725</a></li>
+					<li><a href="form.html?drill=Lesson104&type=randomly&timeLimit=1">Lesson 104 | Briefs 1726-1750</a></li>
+					<li><a href="form.html?drill=Lesson105&type=randomly&timeLimit=1">Lesson 105 | Briefs 1751-1775</a></li>
+					<li><a href="form.html?drill=Lesson106&type=randomly&timeLimit=1">Lesson 106 | Briefs 1776-1800</a></li>
+					<li><a href="form.html?drill=Lesson107&type=randomly&timeLimit=1">Lesson 107 | Briefs 1701-1800</a></li>
+					<li><a href="form.html?drill=Lesson108&type=randomly&timeLimit=1">Lesson 108 | Briefs 1801-1825</a></li>
+					<li><a href="form.html?drill=Lesson109&type=randomly&timeLimit=1">Lesson 109 | Briefs 1826-1850</a></li>
+					<li><a href="form.html?drill=Lesson110&type=randomly&timeLimit=1">Lesson 110 | Briefs 1851-1875</a></li>
+					<li><a href="form.html?drill=Lesson111&type=randomly&timeLimit=1">Lesson 111 | Briefs 1876-1900</a></li>
+					<li><a href="form.html?drill=Lesson112&type=randomly&timeLimit=1">Lesson 112 | Briefs 1801-1900</a></li>
+					<li><a href="form.html?drill=Lesson113&type=randomly&timeLimit=1">Lesson 113 | Briefs 1901-1925</a></li>
+					<li><a href="form.html?drill=Lesson114&type=randomly&timeLimit=1">Lesson 114 | Briefs 1926-1950</a></li>
+					<li><a href="form.html?drill=Lesson115&type=randomly&timeLimit=1">Lesson 115 | Briefs 1951-1975</a></li>
+					<li><a href="form.html?drill=Lesson116&type=randomly&timeLimit=1">Lesson 116 | Briefs 1976-2000</a></li>
+					<li><a href="form.html?drill=Lesson117&type=randomly&timeLimit=1">Lesson 117 | Briefs 1901-2000</a></li>
+					<li><a href="form.html?drill=Lesson118&type=randomly&timeLimit=2">Lesson 118 | Briefs 1501-1750</a></li>
+					<li><a href="form.html?drill=Lesson119&type=randomly&timeLimit=2">Lesson 119 | Briefs 1751-2000</a></li>
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=Lesson40&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson41&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson42&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson43&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson44&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson45&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson46&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson47&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson48&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson49&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson50&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson51&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson52&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson53&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson54&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson55&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson56&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson57&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson58&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson59&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson60&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson61&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson62&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson63&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson64&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson65&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson66&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson67&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson68&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson69&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson70&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson71&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson72&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson73&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson74&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson75&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson76&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson77&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson78&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson79&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson80&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson81&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson82&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson83&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson84&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson85&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson86&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson87&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson88&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson89&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson90&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson91&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson92&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson93&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson94&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson95&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson96&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson97&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson98&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson99&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson100&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson101&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson102&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson103&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson104&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson105&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson106&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson107&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson108&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson109&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson110&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson111&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson112&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson113&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson114&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson115&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson116&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson117&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson118&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson119&type=randomly">Untimed Lesson</a></li>										
+				</ul>				
+			</div>
+		</div><br>
+		Section D
+		<div class="lesson-container">
+			<div class="column columnLeft">
+				<ul>
+					<li><a href="form.html?drill=Lesson120&type=randomly&timeLimit=1">Lesson 120 | Briefs 2001-2025</a></li>
+					<li><a href="form.html?drill=Lesson121&type=randomly&timeLimit=1">Lesson 121 | Briefs 2026-2050</a></li>
+					<li><a href="form.html?drill=Lesson122&type=randomly&timeLimit=1">Lesson 122 | Briefs 2051-2075</a></li>
+					<li><a href="form.html?drill=Lesson123&type=randomly&timeLimit=1">Lesson 123 | Briefs 2076-2100</a></li>
+					<li><a href="form.html?drill=Lesson124&type=randomly&timeLimit=1">Lesson 124 | Briefs 2001-2100</a></li>
+					<li><a href="form.html?drill=Lesson125&type=randomly&timeLimit=1">Lesson 125 | Briefs 2101-2125</a></li>
+					<li><a href="form.html?drill=Lesson126&type=randomly&timeLimit=1">Lesson 126 | Briefs 2126-2150</a></li>
+					<li><a href="form.html?drill=Lesson127&type=randomly&timeLimit=1">Lesson 127 | Briefs 2151-2175</a></li>
+					<li><a href="form.html?drill=Lesson128&type=randomly&timeLimit=1">Lesson 128 | Briefs 2176-2200</a></li>
+					<li><a href="form.html?drill=Lesson129&type=randomly&timeLimit=1">Lesson 129 | Briefs 2101-2200</a></li>
+					<li><a href="form.html?drill=Lesson130&type=randomly&timeLimit=1">Lesson 130 | Briefs 2201-2225</a></li>
+					<li><a href="form.html?drill=Lesson131&type=randomly&timeLimit=1">Lesson 131 | Briefs 2226-2250</a></li>
+					<li><a href="form.html?drill=Lesson132&type=randomly&timeLimit=1">Lesson 132 | Briefs 2251-2275</a></li>
+					<li><a href="form.html?drill=Lesson133&type=randomly&timeLimit=1">Lesson 133 | Briefs 2276-2300</a></li>
+					<li><a href="form.html?drill=Lesson134&type=randomly&timeLimit=1">Lesson 134 | Briefs 2201-2300</a></li>
+					<li><a href="form.html?drill=Lesson135&type=randomly&timeLimit=1">Lesson 135 | Briefs 2301-2325</a></li>
+					<li><a href="form.html?drill=Lesson136&type=randomly&timeLimit=1">Lesson 136 | Briefs 2326-2350</a></li>
+					<li><a href="form.html?drill=Lesson137&type=randomly&timeLimit=1">Lesson 137 | Briefs 2351-2375</a></li>
+					<li><a href="form.html?drill=Lesson138&type=randomly&timeLimit=1">Lesson 138 | Briefs 2376-2400</a></li>
+					<li><a href="form.html?drill=Lesson139&type=randomly&timeLimit=1">Lesson 139 | Briefs 2301-2400</a></li>
+					<li><a href="form.html?drill=Lesson140&type=randomly&timeLimit=1">Lesson 140 | Briefs 2401-2425</a></li>
+					<li><a href="form.html?drill=Lesson141&type=randomly&timeLimit=1">Lesson 141 | Briefs 2426-2450</a></li>
+					<li><a href="form.html?drill=Lesson142&type=randomly&timeLimit=1">Lesson 142 | Briefs 2451-2475</a></li>
+					<li><a href="form.html?drill=Lesson143&type=randomly&timeLimit=1">Lesson 143 | Briefs 2476-2500</a></li>
+					<li><a href="form.html?drill=Lesson144&type=randomly&timeLimit=1">Lesson 144 | Briefs 2401-2500</a></li>
+					<li><a href="form.html?drill=Lesson145&type=randomly&timeLimit=1">Lesson 145 | Briefs 2501-2525</a></li>
+					<li><a href="form.html?drill=Lesson146&type=randomly&timeLimit=1">Lesson 146 | Briefs 2526-2550</a></li>
+					<li><a href="form.html?drill=Lesson147&type=randomly&timeLimit=1">Lesson 147 | Briefs 2551-2575</a></li>
+					<li><a href="form.html?drill=Lesson148&type=randomly&timeLimit=1">Lesson 148 | Briefs 2576-2600</a></li>
+					<li><a href="form.html?drill=Lesson149&type=randomly&timeLimit=1">Lesson 149 | Briefs 2501-2600</a></li>
+					<li><a href="form.html?drill=Lesson150&type=randomly&timeLimit=1">Lesson 150 | Briefs 2601-2625</a></li>
+					<li><a href="form.html?drill=Lesson151&type=randomly&timeLimit=1">Lesson 151 | Briefs 2626-2650</a></li>
+					<li><a href="form.html?drill=Lesson152&type=randomly&timeLimit=1">Lesson 152 | Briefs 2651-2675</a></li>
+					<li><a href="form.html?drill=Lesson153&type=randomly&timeLimit=1">Lesson 153 | Briefs 2676-2700</a></li>
+					<li><a href="form.html?drill=Lesson154&type=randomly&timeLimit=1">Lesson 154 | Briefs 2601-2700</a></li>
+					<li><a href="form.html?drill=Lesson155&type=randomly&timeLimit=1">Lesson 155 | Briefs 2701-2725</a></li>
+					<li><a href="form.html?drill=Lesson156&type=randomly&timeLimit=1">Lesson 156 | Briefs 2726-2750</a></li>
+					<li><a href="form.html?drill=Lesson157&type=randomly&timeLimit=1">Lesson 157 | Briefs 2751-2775</a></li>
+					<li><a href="form.html?drill=Lesson158&type=randomly&timeLimit=1">Lesson 158 | Briefs 2776-2800</a></li>
+					<li><a href="form.html?drill=Lesson159&type=randomly&timeLimit=1">Lesson 159 | Briefs 2701-2800</a></li>
+					<li><a href="form.html?drill=Lesson160&type=randomly&timeLimit=1">Lesson 160 | Briefs 2801-2825</a></li>
+					<li><a href="form.html?drill=Lesson161&type=randomly&timeLimit=1">Lesson 161 | Briefs 2826-2850</a></li>
+					<li><a href="form.html?drill=Lesson162&type=randomly&timeLimit=1">Lesson 162 | Briefs 2851-2875</a></li>
+					<li><a href="form.html?drill=Lesson163&type=randomly&timeLimit=1">Lesson 163 | Briefs 2876-2900</a></li>
+					<li><a href="form.html?drill=Lesson164&type=randomly&timeLimit=1">Lesson 164 | Briefs 2801-2900</a></li>
+					<li><a href="form.html?drill=Lesson165&type=randomly&timeLimit=1">Lesson 165 | Briefs 2901-2925</a></li>
+					<li><a href="form.html?drill=Lesson166&type=randomly&timeLimit=1">Lesson 166 | Briefs 2926-2950</a></li>
+					<li><a href="form.html?drill=Lesson167&type=randomly&timeLimit=1">Lesson 167 | Briefs 2951-2975</a></li>
+					<li><a href="form.html?drill=Lesson168&type=randomly&timeLimit=1">Lesson 168 | Briefs 2976-3000</a></li>
+					<li><a href="form.html?drill=Lesson169&type=randomly&timeLimit=1">Lesson 169 | Briefs 2901-3000</a></li>
+					<li><a href="form.html?drill=Lesson170&type=randomly&timeLimit=1">Lesson 170 | Briefs 3001-3025</a></li>
+					<li><a href="form.html?drill=Lesson171&type=randomly&timeLimit=1">Lesson 171 | Briefs 3026-3050</a></li>
+					<li><a href="form.html?drill=Lesson172&type=randomly&timeLimit=1">Lesson 172 | Briefs 3051-3075</a></li>
+					<li><a href="form.html?drill=Lesson173&type=randomly&timeLimit=1">Lesson 173 | Briefs 3076-3100</a></li>
+					<li><a href="form.html?drill=Lesson174&type=randomly&timeLimit=1">Lesson 174 | Briefs 3001-3100</a></li>
+					<li><a href="form.html?drill=Lesson175&type=randomly&timeLimit=1">Lesson 175 | Briefs 3101-3125</a></li>
+					<li><a href="form.html?drill=Lesson176&type=randomly&timeLimit=1">Lesson 176 | Briefs 3126-3150</a></li>
+					<li><a href="form.html?drill=Lesson177&type=randomly&timeLimit=1">Lesson 177 | Briefs 3151-3175</a></li>
+					<li><a href="form.html?drill=Lesson178&type=randomly&timeLimit=1">Lesson 178 | Briefs 3176-3200</a></li>
+					<li><a href="form.html?drill=Lesson179&type=randomly&timeLimit=1">Lesson 179 | Briefs 3101-3200</a></li>
+					<li><a href="form.html?drill=Lesson180&type=randomly&timeLimit=1">Lesson 180 | Briefs 3201-3225</a></li>
+					<li><a href="form.html?drill=Lesson181&type=randomly&timeLimit=1">Lesson 181 | Briefs 3226-3250</a></li>
+					<li><a href="form.html?drill=Lesson182&type=randomly&timeLimit=1">Lesson 182 | Briefs 3251-3275</a></li>
+					<li><a href="form.html?drill=Lesson183&type=randomly&timeLimit=1">Lesson 183 | Briefs 3276-3300</a></li>
+					<li><a href="form.html?drill=Lesson184&type=randomly&timeLimit=1">Lesson 184 | Briefs 3201-3300</a></li>
+					<li><a href="form.html?drill=Lesson185&type=randomly&timeLimit=1">Lesson 185 | Briefs 3301-3325</a></li>
+					<li><a href="form.html?drill=Lesson186&type=randomly&timeLimit=1">Lesson 186 | Briefs 3326-3350</a></li>
+					<li><a href="form.html?drill=Lesson187&type=randomly&timeLimit=1">Lesson 187 | Briefs 3351-3375</a></li>
+					<li><a href="form.html?drill=Lesson188&type=randomly&timeLimit=1">Lesson 188 | Briefs 3376-3400</a></li>
+					<li><a href="form.html?drill=Lesson189&type=randomly&timeLimit=1">Lesson 189 | Briefs 3301-3400</a></li>
+					<li><a href="form.html?drill=Lesson190&type=randomly&timeLimit=1">Lesson 190 | Briefs 3401-3425</a></li>
+					<li><a href="form.html?drill=Lesson191&type=randomly&timeLimit=1">Lesson 191 | Briefs 3426-3450</a></li>
+					<li><a href="form.html?drill=Lesson192&type=randomly&timeLimit=1">Lesson 192 | Briefs 3451-3475</a></li>
+					<li><a href="form.html?drill=Lesson193&type=randomly&timeLimit=1">Lesson 193 | Briefs 3476-3500</a></li>
+					<li><a href="form.html?drill=Lesson194&type=randomly&timeLimit=1">Lesson 194 | Briefs 3401-3500</a></li>
+					<li><a href="form.html?drill=Lesson195&type=randomly&timeLimit=1">Lesson 195 | Briefs 3501-3525</a></li>
+					<li><a href="form.html?drill=Lesson196&type=randomly&timeLimit=1">Lesson 196 | Briefs 3526-3550</a></li>
+					<li><a href="form.html?drill=Lesson197&type=randomly&timeLimit=1">Lesson 197 | Briefs 3551-3575</a></li>
+					<li><a href="form.html?drill=Lesson198&type=randomly&timeLimit=1">Lesson 198 | Briefs 3576-3600</a></li>
+					<li><a href="form.html?drill=Lesson199&type=randomly&timeLimit=1">Lesson 199 | Briefs 3501-3600</a></li>
+					<li><a href="form.html?drill=Lesson200&type=randomly&timeLimit=1">Lesson 200 | Briefs 3601-3625</a></li>
+					<li><a href="form.html?drill=Lesson201&type=randomly&timeLimit=1">Lesson 201 | Briefs 3626-3650</a></li>
+					<li><a href="form.html?drill=Lesson202&type=randomly&timeLimit=1">Lesson 202 | Briefs 3651-3675</a></li>
+					<li><a href="form.html?drill=Lesson203&type=randomly&timeLimit=1">Lesson 203 | Briefs 3676-3700</a></li>
+					<li><a href="form.html?drill=Lesson204&type=randomly&timeLimit=1">Lesson 204 | Briefs 3601-3700</a></li>
+					<li><a href="form.html?drill=Lesson205&type=randomly&timeLimit=1">Lesson 205 | Briefs 3701-3725</a></li>
+					<li><a href="form.html?drill=Lesson206&type=randomly&timeLimit=1">Lesson 206 | Briefs 3726-3750</a></li>
+					<li><a href="form.html?drill=Lesson207&type=randomly&timeLimit=1">Lesson 207 | Briefs 3751-3775</a></li>
+					<li><a href="form.html?drill=Lesson208&type=randomly&timeLimit=1">Lesson 208 | Briefs 3776-3800</a></li>
+					<li><a href="form.html?drill=Lesson209&type=randomly&timeLimit=1">Lesson 209 | Briefs 3701-3800</a></li>
+					<li><a href="form.html?drill=Lesson210&type=randomly&timeLimit=1">Lesson 210 | Briefs 3801-3825</a></li>
+					<li><a href="form.html?drill=Lesson211&type=randomly&timeLimit=1">Lesson 211 | Briefs 3826-3850</a></li>
+					<li><a href="form.html?drill=Lesson212&type=randomly&timeLimit=1">Lesson 212 | Briefs 3851-3875</a></li>
+					<li><a href="form.html?drill=Lesson213&type=randomly&timeLimit=1">Lesson 213 | Briefs 3876-3900</a></li>
+					<li><a href="form.html?drill=Lesson214&type=randomly&timeLimit=1">Lesson 214 | Briefs 3801-3900</a></li>
+					<li><a href="form.html?drill=Lesson215&type=randomly&timeLimit=1">Lesson 215 | Briefs 3901-3925</a></li>
+					<li><a href="form.html?drill=Lesson216&type=randomly&timeLimit=1">Lesson 216 | Briefs 3926-3950</a></li>
+					<li><a href="form.html?drill=Lesson217&type=randomly&timeLimit=1">Lesson 217 | Briefs 3951-3975</a></li>
+					<li><a href="form.html?drill=Lesson218&type=randomly&timeLimit=1">Lesson 218 | Briefs 3976-4000</a></li>
+					<li><a href="form.html?drill=Lesson219&type=randomly&timeLimit=1">Lesson 219 | Briefs 3901-4000</a></li>
+					<li><a href="form.html?drill=Lesson220&type=randomly&timeLimit=1">Lesson 220 | Briefs 4001-4025</a></li>
+					<li><a href="form.html?drill=Lesson221&type=randomly&timeLimit=1">Lesson 221 | Briefs 4026-4050</a></li>
+					<li><a href="form.html?drill=Lesson222&type=randomly&timeLimit=1">Lesson 222 | Briefs 4051-4075</a></li>
+					<li><a href="form.html?drill=Lesson223&type=randomly&timeLimit=1">Lesson 223 | Briefs 4076-4100</a></li>
+					<li><a href="form.html?drill=Lesson224&type=randomly&timeLimit=1">Lesson 224 | Briefs 4001-4100</a></li>
+					<li><a href="form.html?drill=Lesson225&type=randomly&timeLimit=1">Lesson 225 | Briefs 4101-4125</a></li>
+					<li><a href="form.html?drill=Lesson226&type=randomly&timeLimit=1">Lesson 226 | Briefs 4126-4150</a></li>
+					<li><a href="form.html?drill=Lesson227&type=randomly&timeLimit=1">Lesson 227 | Briefs 4151-4175</a></li>
+					<li><a href="form.html?drill=Lesson228&type=randomly&timeLimit=1">Lesson 228 | Briefs 4176-4200</a></li>
+					<li><a href="form.html?drill=Lesson229&type=randomly&timeLimit=1">Lesson 229 | Briefs 4101-4200</a></li>
+					<li><a href="form.html?drill=Lesson230&type=randomly&timeLimit=1">Lesson 230 | Briefs 4201-4225</a></li>
+					<li><a href="form.html?drill=Lesson231&type=randomly&timeLimit=1">Lesson 231 | Briefs 4226-4250</a></li>
+					<li><a href="form.html?drill=Lesson232&type=randomly&timeLimit=1">Lesson 232 | Briefs 4251-4275</a></li>
+					<li><a href="form.html?drill=Lesson233&type=randomly&timeLimit=1">Lesson 233 | Briefs 4276-4300</a></li>
+					<li><a href="form.html?drill=Lesson234&type=randomly&timeLimit=1">Lesson 234 | Briefs 4201-4300</a></li>
+					<li><a href="form.html?drill=Lesson235&type=randomly&timeLimit=1">Lesson 235 | Briefs 4301-4325</a></li>
+					<li><a href="form.html?drill=Lesson236&type=randomly&timeLimit=1">Lesson 236 | Briefs 4326-4350</a></li>
+					<li><a href="form.html?drill=Lesson237&type=randomly&timeLimit=1">Lesson 237 | Briefs 4351-4375</a></li>
+					<li><a href="form.html?drill=Lesson238&type=randomly&timeLimit=1">Lesson 238 | Briefs 4376-4400</a></li>
+					<li><a href="form.html?drill=Lesson239&type=randomly&timeLimit=1">Lesson 239 | Briefs 4301-4400</a></li>
+					<li><a href="form.html?drill=Lesson240&type=randomly&timeLimit=1">Lesson 240 | Briefs 4401-4425</a></li>
+					<li><a href="form.html?drill=Lesson241&type=randomly&timeLimit=1">Lesson 241 | Briefs 4426-4450</a></li>
+					<li><a href="form.html?drill=Lesson242&type=randomly&timeLimit=1">Lesson 242 | Briefs 4451-4475</a></li>
+					<li><a href="form.html?drill=Lesson243&type=randomly&timeLimit=1">Lesson 243 | Briefs 4476-4500</a></li>
+					<li><a href="form.html?drill=Lesson244&type=randomly&timeLimit=1">Lesson 244 | Briefs 4401-4500</a></li>
+					<li><a href="form.html?drill=Lesson245&type=randomly&timeLimit=1">Lesson 245 | Briefs 4501-4525</a></li>
+					<li><a href="form.html?drill=Lesson246&type=randomly&timeLimit=1">Lesson 246 | Briefs 4526-4550</a></li>
+					<li><a href="form.html?drill=Lesson247&type=randomly&timeLimit=1">Lesson 247 | Briefs 4551-4575</a></li>
+					<li><a href="form.html?drill=Lesson248&type=randomly&timeLimit=1">Lesson 248 | Briefs 4576-4600</a></li>
+					<li><a href="form.html?drill=Lesson249&type=randomly&timeLimit=1">Lesson 249 | Briefs 4501-4600</a></li>
+					<li><a href="form.html?drill=Lesson250&type=randomly&timeLimit=1">Lesson 250 | Briefs 4601-4625</a></li>
+					<li><a href="form.html?drill=Lesson251&type=randomly&timeLimit=1">Lesson 251 | Briefs 4626-4650</a></li>
+					<li><a href="form.html?drill=Lesson252&type=randomly&timeLimit=1">Lesson 252 | Briefs 4651-4675</a></li>
+					<li><a href="form.html?drill=Lesson253&type=randomly&timeLimit=1">Lesson 253 | Briefs 4676-4700</a></li>
+					<li><a href="form.html?drill=Lesson254&type=randomly&timeLimit=1">Lesson 254 | Briefs 4601-4700</a></li>
+					<li><a href="form.html?drill=Lesson255&type=randomly&timeLimit=1">Lesson 255 | Briefs 4701-4725</a></li>
+					<li><a href="form.html?drill=Lesson256&type=randomly&timeLimit=1">Lesson 256 | Briefs 4726-4750</a></li>
+					<li><a href="form.html?drill=Lesson257&type=randomly&timeLimit=1">Lesson 257 | Briefs 4751-4775</a></li>
+					<li><a href="form.html?drill=Lesson258&type=randomly&timeLimit=1">Lesson 258 | Briefs 4776-4800</a></li>
+					<li><a href="form.html?drill=Lesson259&type=randomly&timeLimit=1">Lesson 259 | Briefs 4701-4800</a></li>
+					<li><a href="form.html?drill=Lesson260&type=randomly&timeLimit=1">Lesson 260 | Briefs 4801-4825</a></li>
+					<li><a href="form.html?drill=Lesson261&type=randomly&timeLimit=1">Lesson 261 | Briefs 4826-4850</a></li>
+					<li><a href="form.html?drill=Lesson262&type=randomly&timeLimit=1">Lesson 262 | Briefs 4851-4875</a></li>
+					<li><a href="form.html?drill=Lesson263&type=randomly&timeLimit=1">Lesson 263 | Briefs 4876-4900</a></li>
+					<li><a href="form.html?drill=Lesson264&type=randomly&timeLimit=1">Lesson 264 | Briefs 4801-4900</a></li>
+					<li><a href="form.html?drill=Lesson265&type=randomly&timeLimit=1">Lesson 265 | Briefs 4901-4925</a></li>
+					<li><a href="form.html?drill=Lesson266&type=randomly&timeLimit=1">Lesson 266 | Briefs 4926-4950</a></li>
+					<li><a href="form.html?drill=Lesson267&type=randomly&timeLimit=1">Lesson 267 | Briefs 4951-4975</a></li>
+					<li><a href="form.html?drill=Lesson268&type=randomly&timeLimit=1">Lesson 268 | Briefs 4976-5000</a></li>
+					<li><a href="form.html?drill=Lesson269&type=randomly&timeLimit=1">Lesson 269 | Briefs 4901-5000</a></li>		
+				</ul>
+			</div>
+			<div class="column columnRight">
+				<ul>
+					<li>or <a href="form.html?drill=Lesson120&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson121&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson122&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson123&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson124&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson125&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson126&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson127&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson128&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson129&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson130&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson131&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson132&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson133&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson134&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson135&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson136&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson137&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson138&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson139&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson140&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson141&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson142&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson143&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson144&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson145&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson146&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson147&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson148&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson149&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson150&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson151&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson152&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson153&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson154&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson155&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson156&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson157&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson158&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson159&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson160&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson161&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson162&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson163&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson164&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson165&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson166&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson167&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson168&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson169&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson170&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson171&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson172&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson173&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson174&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson175&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson176&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson177&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson178&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson179&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson180&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson181&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson182&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson183&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson184&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson185&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson186&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson187&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson188&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson189&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson190&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson191&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson192&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson193&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson194&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson195&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson196&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson197&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson198&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson199&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson200&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson201&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson202&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson203&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson204&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson205&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson206&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson207&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson208&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson209&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson210&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson211&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson212&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson213&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson214&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson215&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson216&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson217&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson218&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson219&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson220&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson221&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson222&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson223&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson224&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson225&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson226&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson227&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson228&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson229&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson230&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson231&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson232&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson233&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson234&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson235&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson236&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson237&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson238&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson239&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson240&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson241&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson242&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson243&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson244&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson245&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson246&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson247&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson248&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson249&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson250&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson251&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson252&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson253&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson254&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson255&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson256&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson257&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson258&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson259&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson260&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson261&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson262&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson263&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson264&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson265&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson266&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson267&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson268&type=randomly">Untimed Lesson</a></li>
+					<li>or <a href="form.html?drill=Lesson269&type=randomly">Untimed Lesson</a></li>							
+				</ul>				
+			</div>			
+		</div><br>
+	</div>
+	<a href="#section0">Back to Top</a><br><br>
+	
+	Please contact cofini@cofinidigital.com for any erroneous, irrelevant, and grammatically incorrect briefs or misentries found inside the lessons.
+	<br><br><hr><br><br>
+
+	Copyright (c) 2016 Joshua I. Grams 	&lt;josh@qualdan.com&gt;<br><br>
+
+	Permission is hereby granted, free of charge, to any person
+	obtaining a copy of this software and associated documentation
+	files (the "Software"), to deal in the Software without
+	restriction, including without limitation the rights to use, copy,
+	modify, merge, publish, distribute, sublicense, and/or sell copies
+	of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:<br><br>
+	
+	The above copyright notice and this permission notice shall be
+	included in all copies or substantial portions of the Software.<br><br>
+	
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+	HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+	DEALINGS IN THE SOFTWARE.
+</div>
+
+<div id="lesson" class="wrapper" style="display: none">
+	<div id="leftside">
+		<h3 id="lesson-name" class="center"></h3>
+		<div id="drill-content">
+			<div id="answer"></div>
+			<div id="exercise"></div>
+			<div id="results"></div>
+		</div>
+	</div>
+
+	<textarea id="input"></textarea>
+
+	<div id="nav">
+		<p id="strokes"></p>
+		<p id="clock" class="clock"></p>
+		<p id="live-wpm-display" class="wpm"></p>
+
+		<p class="center"><a id="again" title="Enter">&#8634; Restart <span class="shortcutkey">(Enter 3x)</span></a></p>
+		<p class="center"><a id="back" title="LeftArrow">&larr; Back to Menu <span class="shortcutkey">(LeftArrow)</span></a></p>
+	</div>
+</div>
+
+
+
+<script>
+function runExercise(fields) {
+	if(fields.drill === 'NumberSentences') exercise = numberSentences(fields);
+	else {
+		if(fields.last) {
+			fields.choose = fields.count
+			fields.count = Math.max(+fields.choose, fields.last - fields.first)
+		}
+		exercise = wordDrill(fields);
+	}
+	if(exercise) {
+		if(fields.hints) {
+			var strokes = document.getElementById('strokes');
+			if(fields.floating_hints) {
+				strokes.style.position = 'fixed';
+			}
+			var translations = TypeJig.shortestTranslations(TypeJig.Translations.Plover);
+			var hints = new StenoDisplay(strokes, translations, true);
+		}
+		var options = fields;
+
+		displayOnly('lesson');
+		return setExercise(exercise.name, exercise, hints, options);
+	}
+}
+
+function getSettings(evt) {
+	const hintButtons = document.getElementsByName('hints')
+	for(var radio of hintButtons) {
+		if(radio.checked) {
+			hiddenField(this, 'hints', radio.value)
+			break
+		}
+	}
+
+	var live_wpm = document.getElementById('live_wpm')
+	if(live_wpm.checked) hiddenField(this, 'live_wpm', live_wpm.value)
+
+	var show_timer = document.getElementById('show_timer')
+	hiddenField(this, 'show_timer', show_timer.checked ? show_timer.value : 'no')
+	var wpm = document.getElementById('wpm')
+	var cpm = document.getElementById('cpm')
+	if(cpm.checked) hiddenField(this, 'cpm', 5*wpm.value)
+	else hiddenField(this, 'wpm', wpm.value);
+
+	var alternate = document.getElementById('alternate')
+	hiddenField(this, 'alternate', alternate.value)
+}
+
+function runCustom(evt) {
+	evt.preventDefault();
+	getSettings.call(this);
+	var fields = getFormFields(this);
+	if(storageAvailable('localStorage')) {
+		localStorage.custom = fields.drill
+	}
+	if(fields.shuffleLines) {
+		// Don't shuffle words.
+		delete(fields.type);
+		// Pre-shuffle lines.
+		fields.drill = shuffle(fields.drill.trim().split(/\n+/m)).join(' ');
+	}
+	let drill =  fields.drill.trim().split(/\s+/m);
+	let n = +fields.repeat || 1;
+	TypeJig.WordSets.custom = [];
+	for(let i=0; i<n; ++i) TypeJig.WordSets.custom.push(...drill);
+	fields.drill = 'custom';
+	var jig = runExercise(fields);
+}
+
+window.onload = function() {
+	if(document.location.search !== '') {
+		runExercise(parseQueryString(document.location.search));
+	} else {
+		// Add event listeners to get settings before submitting.
+		var forms = document.querySelectorAll('form');
+		for(var i=0; i<forms.length; ++i) {
+			var form = forms[i]
+			if(form.id === 'custom') {
+				form.addEventListener('submit', runCustom);
+			} else {
+				if(form.elements.count && form.elements.last) {
+					const elts = form.elements
+					const setLast = function() {
+						const min = 1*elts.first.value + 1*elts.count.value
+						elts.last.value = Math.max(elts.last.value, min)
+						elts.last.min = min
+					}
+					elts.count.addEventListener('change', setLast)
+					elts.first.addEventListener('change', setLast)
+					elts.last.addEventListener('change', setLast)
+				}
+				form.addEventListener('submit', getSettings);
+			}
+		}
+	}
+}
+
+loadSettings()
+if(storageAvailable('localStorage') && localStorage.custom != null) {
+	let custom = document.getElementById('custom')
+	custom.elements.drill.value = localStorage.custom
+}
+</script>
+
+</body>
+</html>
+
+<!-- Temporarily Removed 
+NOTES: this goes to form.html, which is why when you refresh, it sends back to the main page<br>
+maybe can fix reset by making the restart button do the same thing as the start drill button<br>
+or making an entirely new form to go to
+	<div class="form-section">
+		<div class="caption">Custom <strong>text</strong></div>
+
+		<form class="drill-options" id="custom" action="form.html">
+
+			<textarea name="drill"></textarea><br>
+			<input type="checkbox" name="type" value="shuffled"> Shuffle words.<br>
+			Or <input type="checkbox" name="shuffleLines" value="shuffled" checked> shuffle lines.<br>
+			Repeat <input type="number" name="repeat" min="1" max="100" step="1" value="1"> times.<br>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption">emily's, convert to multi-word</div>
+
+		<form class="drill-options" action="emilySymbols.html">
+
+			Drill Length:
+			<input type="number" name="word_count" value="100" min="50" max="1000" step="50">
+			words <small>(plus the rest of the last sentence.)</small>
+			<br>
+
+			<script>document.write('<input type="hidden" name="seed" value="' + Math.random().toString() + '">')</script>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+Extract drill length / convert to multi-word
+	<div class="form-section">
+		<div class="caption">Emily's Symbol Dictionary (with spacing)</div>
+
+		<form class="drill-options" action="emilySymbols.html">
+
+			Drill Length:
+			<input type="number" name="word_count" value="100" min="50" max="1000" step="50">
+			words <small>(plus the rest of the last sentence.)</small>
+			<br>
+
+			<script>document.write('<input type="hidden" name="seed" value="' + Math.random().toString() + '">')</script>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+extract the drill time portion
+	<div class="form-section">
+		<div class="caption">Phonetic <strong>words</strong> that use exactly one starting <strong>consonant</strong> key, exactly one <strong>vowel</strong> key and exactly one ending <strong>consonant</strong>.</div>
+
+		<form class="drill-options" action="form.html">
+			<input type="hidden" name="drill" value="singleStrokeCVC">
+			<input type="hidden" name="type" value="randomly">
+
+			Drill Time:
+			<input type="number" name="timeLimit" value="3" min="1" max="60" size="3">
+			minutes.
+			<br>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+-->
+
+<!-- Permanently Removed
+			
+			<li><a href="two-key.html">Sentences which (mostly) only use two keys at once</a></li>
+			<li><a href="form.html?drill=shortAndLongA&type=shuffled&select=shuffled&hints=true">Short and Long A words</a></li>
+			<li><a href="form.html?drill=ST%20words&drill=SH%20words&drill=CH%20words&type=shuffled&hints=true">"st-", "sh-", and "ch-" words</a></li>
+			<li><a href="form.html?drill=-LD%20words&drill=-LT%20words&drill=-RT%20words&type=shuffled&hints=true">Simple "-ld", "-lt", and "-rt" words</a></li>
+			<li><a href="form.html?drill=%2bLD%20words&drill=%2bLT%20words&drill=%2bRT%20words&type=shuffled&hints=true">Extended "-ld", "-lt", and "-rt" words</a></li>
+			<li><a href="form.html?drill=-LD%20words&drill=-LT%20words&drill=-RT%20words&drill=%2bLD%20words&drill=%2bLT%20words&drill=%2bRT%20words&type=shuffled&hints=true">All "-ld", "-lt", and "-rt" words</a></li>
+			<li><a href="form.html?drill=d-/b-&type=randomly&timeLimit=3">D- and B- words</a></li>
+			<li><a href="form.html?drill=nch&type=randomly&timeLimit=3">"nch" words</a></li>
+			<li><a href="form.html?drill=-ld/-lt&drill=-nj&type=randomly&timeLimit=5">"-nj" words mixed with "-ld/"/"-lt" ones.</a></li>
+
+	<div class="form-section">
+		<div class="caption"><strong>Numbers</strong> 1-99 in simple sentences</div>
+
+		<form class="drill-options" action="form.html">
+			<input type="hidden" name="drill" value="NumberSentences">
+			<input type="hidden" name="type" value="randomly">
+
+			Drill Time:
+			<input type="number" name="timeLimit" value="3" min="1" max="60">
+			minutes.
+			<br>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption">Da Dreaded Dueling Digit Duo <strong>Finger Drills</strong></div>
+
+		<form class="drill-options" action="finger-drills.html">
+
+			Section <input type="number" name="section" value="1" min="1" max="27"><br>
+
+			Alternate <input type="number" name="iterations" value="20" step="5"> times.<br>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption"><strong>Quotes</strong> from <a href="https://github.com/Miodec/monkeytype/blob/master/static/quotes/english.json">Monkeytype</a>.</div>
+
+		<form class="drill-options" action="monkeytype-quote.html">
+
+			Drill length:
+			<ul>
+				<li style="list-style:none"><input type="checkbox" name="length" value="short"><label for="length">Short (&lt;100 characters)</label></li>
+				<li style="list-style:none"><input type="checkbox" name="length" value="medium"><label for="length">Medium (101-300 characters)</label></li>
+				<li style="list-style:none"><input type="checkbox" name="length" value="long"><label for="length">Long (301-600 characters)</label></li>
+				<li style="list-style:none"><input type="checkbox" name="length" value="thicc"><label for="length">Thicc (&gt;600 characters)</label></li>
+			</ul>
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption">Custom <strong>Finger Drills</strong></div>
+
+		<form class="drill-options" action="finger-drills.html">
+
+			Repeat strokes <input type="text" name="strokes" size="18">
+			<input type="number" name="iterations" value="20" step="5"> times.<br>
+			(e.g. "EFPLT/EFPLS/EFPLTS EBGD/EBGZ/EBGDZ": strokes separated by slashes, sets separated by spaces)<br>
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption">Most used <strong>words</strong> (once, in random order)</div>
+
+		<form id="most-used" class="drill-options" action="form.html">
+			<input type="hidden" name="drill" value="NGSL_all_forms">
+			<input type="hidden" name="type" value="shuffled">
+
+			Drill
+			<input type="number" name="count" value="100" min="25" max="1000" step="25">
+			words from the range
+			<input type="number" name="first" value="0" min="0" max="8400" step="25">
+			to
+			<input type="number" name="last" value="100" min="100" max="1000" step="25">
+			<br>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption"><strong>Sentences</strong> extracted from <a href="https://www.gutenberg.org/">Project Gutenberg</a></div>
+
+		<form class="drill-options" action="short-sentences.html">
+
+			<p><b class="red">NEW</b>: top "0" words gives a set of nearly 200k sentences with unrestricted vocabulary.</p>
+			Drill sentences containing only the top
+			<input id="gutnum" type="number" name="top" value="0" min="0" max="8000" step="100">
+			most used words<br>
+
+			Drill Length:
+			<input type="number" name="word_count" value="100" min="50" max="1000" step="50">
+			words <small>(plus the rest of the last sentence.)</small>
+			<br>
+
+			<script>
+			document.write('<input type="hidden" name="seed" value="' + Math.random().toString() + '">')
+			document.getElementById('gutnum').addEventListener('input', function(evt) {
+				const num = evt.target, form = num.form
+				form.action = (num.value === '0') ? 'short-sentences.html' : 'gutenberg.html'
+			})
+			</script>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>
+
+	<div class="form-section">
+		<div class="caption">Randomly generated <strong>sentences</strong> using words from a <a href="https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Contemporary_fiction">Wiktionary top 2000 list</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a>) and sentence data from <a href="https://tatoeba.org">Tatoeba</a> (<a href="https://creativecommons.org/licenses/by/2.0/fr/">CC-BY 2.0 fr</a>)</div>
+
+		<form class="drill-options" action="markov.html">
+
+			Drill Length:
+			<input type="number" name="word_count" value="100" min="50" max="1000" step="50">
+			words <small>(plus the rest of the last sentence.)</small>
+			<br>
+
+			<script>document.write('<input type="hidden" name="seed" value="' + Math.random().toString() + '">')</script>
+
+			<button>Start Drill &rarr;</button>
+		</form>
+	</div>-->
